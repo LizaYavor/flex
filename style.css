@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(./images/background\ flex.png);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    width: 1000px;
+    height: 250px;
+    margin-top: 56px;
+    background-color: white;
+    display: flex;
+}
+.headerLogo {
+    width: 350px;
+    height: 230px;
+    padding: 70px 30px;
+    
+}
+.headerLogoText {
+    color: #128aa7;
+    position: relative;
+    bottom: 60px;
+    left: 40px;
+}
+.headerContacts {
+    color: #128aa7;
+    width: 100%;
+    text-align: left;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.countriesFlags {
+    display: flex;
+    justify-content: end;
+    margin-top: 70px;
+
+}
+.images {
+    text-align: center;
+    margin-left: 15px;
+    max-width: 53px;
+    
+}
+.countries {
+    text-decoration: underline;
+    font-size: 10px;
+    letter-spacing: normal;
+}
+.middle {
+    width: 1000px;
+    height: 40px;
+    margin: 0;
+    background-color: darkslategray;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer {
+    background-color: white;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: grey;
+}
+.footerInfo {
+    background-color: lightskyblue;
+    padding: 20px;
+}
+.footerNews {
+    background-color: lightskyblue;
+    padding: 20px;
+}
+.mainmenu {
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.mainmenu:hover {
+    background-color: darkslategray;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownMenu{
+    width: 150px;
+    display: none;
+    position: absolute;
+    background-color: darkslategray;
+    z-index: 1;
+    padding: 10px 0px 10px 10px;
+    
+}
+.dropdownMenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdownMenu {
+    display: block;
+}
