@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(./images/bg.png);
+    background-size: 100%;
+    font-family: Lato;
+}
+.conteiner {
+    width: 1400px;
+    margin: 80px 200px 0px 250px;
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "main sidebar"
+    "footer footer";
+}
+.GoogleSearch {
+    grid-area: head;
+    height: 130px;
+    color: grey;
+    padding: 40px 150px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+}
+input {
+    color: lightgrey;
+    border: none;
+    font-size: 24px;
+    width: 940px;
+    margin-left: 30px;
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.TrendResults {
+    grid-area: main;
+    font-size: 20px;
+    width: 700px;
+    padding-left: 150px;
+    padding-top: 60px;
+
+}
+.TopResults {
+    grid-area: sidebar;
+    font-size: 20px;
+    width: 700px;
+    padding-left: 100px;
+    padding-top: 60px;
+       
+}
+.LeftSide {
+    padding: 40px 0px 50px 0px;
+    text-align: justify;
+}
+.newspost {
+    display: flex;
+    padding-bottom: 30px;
+}
+.postimage {
+    padding-right: 15px;
+}
+.postchannel {
+    color: green;
+    font: bolder;
+}
+.timepost {
+    color: lightgrey;
+}
+.RightSide {
+    padding-right: 150px;
+    padding-top: 40px;
+    text-align: justify;
+}
+.topnews {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.bottomofresults {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.bottomofresults2 {
+    display: flex;
+    justify-content: start;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+.bottomofresults3 {
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
+    padding-top: 20px;
+}
+.moreresults {
+    color: blue;
+}
+.scoreresult {
+    color: grey;
+}
+.channellist {
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.channellist p:last-child {
+    color: green;
+}
+.channelinfo {
+    display: flex;
+}
+.channelimages {
+    padding-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.theend {
+    text-align: end;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
